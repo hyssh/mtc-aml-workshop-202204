@@ -33,3 +33,21 @@ Break | 12:00 pm - 01:00 pm | Lunch Break;
 Office Hour | 01:00 pm - 01:45 pm | (Optional) One-on-one Technical Architect coaching
 Session 3.2 | 02:00 pm - 04:00 pm |- AML Pipeline & MLOps</br> - Hands-on break out: 3.1 Try your own scenario / tutorial</br>- Delete resources </br>- Survey
 
+
+## Navigation
+
+[session 1.1](./labs/session1.1.md)
+
+[session 1.2](./labs/session1.2.md)
+
+[session 2.1](./labs/session2.1.md)
+
+[session 2.2](./labs/session2.2.md)
+
+[session 3.1.1](./labs/session3.1.1.md)
+
+[session 3.1.2](./labs/session3.1.2md)
+
+[session 3.1.3](./labs/session3.1.3.md)
+
+[session 3.2](./labs/session3.2.md)
