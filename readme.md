@@ -10,10 +10,10 @@ Let us know who you are [Pool](https://app.klaxoon.com/animate/survey/JRTADB9).
 
 Session # | Time | Topics
 ---|---|---
-Session 1.1|10:00 am - 12:00 pm|- Welcome</br>- Azure Machine Learning  introductions</br>- Hands-on break out: Create Azure Machine Learning Workspace
+Session 1.1 | 10:00 am - 12:00 pm |- Welcome</br>- Azure Machine Learning  introductions</br>- Hands-on break out: Create Azure Machine Learning Workspace
 Break | 12:00 pm - 01:00 pm | Lunch Break;
 Office Hour | 01:00 pm - 01:45 pm | (Optional) One-on-one Technical Architect coaching
-Session 1.2 | 02:00 pm - 04:00 pm |- Automated Machine Learning Concept</br> - Hands-on break out: Create AutoML experiment</br>- Survey
+Session 1.2 | 02:00 pm - 04:00 pm |- Automated Machine Learning Concept</br> - Hands-on break out: [Create AutoML experiment](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/machine-learning/tutorial-first-experiment-automated-ml.md)</br>- Survey
 
 ## Day 2
 
