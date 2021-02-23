@@ -22,7 +22,7 @@ Session # | Time | Topics
 Session 2.1|10:00 am - 12:00 pm|- No-code ML using [AML Studio Designer](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/machine-learning/concept-designer.md)</br>- Hands-on break out 2.1: [Tutorial for AML Studio Designer](https://github.com/MicrosoftDocs/azure-docs/blob/master/articles/machine-learning/tutorial-designer-automobile-price-train-score.md)</br>
 Break | 12:00 pm - 01:00 pm | Lunch Break;
 Office Hour | 01:00 pm - 01:45 pm | (Optional) One-on-one Technical Architect coaching (Join the same teams meeting invite)
-Session 2.2 | 02:00 pm - 04:00 pm |- Azure Machine Learning using Python SDK</br> - Hands-on break out 2.2: Create Compute Instance </br>- Hands-on break out 2.3: AML Python get started</br>- Survey
+Session 2.2 | 02:00 pm - 04:00 pm |- [Azure Machine Learning using Python SDK](https://github.com/hyssh/mtc-open-workshop/blob/41f072210a13101e00961eba5cf7d02c04b7354f/Notebooks/tutorials/create-first-ml-experiment/tutorial-1st-experiment-sdk-train.ipynb)</br> - Hands-on break out 2.2: Create Compute Instance </br>- Hands-on break out 2.3: AML Python get started</br>- Survey
 
 ## Day 3
 
