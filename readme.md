@@ -5,11 +5,12 @@ Let's get started Azure Machine Leaning together.
 ## Agenda
 
 Let us know who you are [Poll](https://app.klaxoon.com/animate/survey/). Please use following code to particiate the survey.
+
+> Note: Please ignor the Log In prompt of the survey. Close the Log In pop up and use the code above.
+
 ```text
 JRTADB9
 ```
-> Note: Please ignor the Log In prompt of the survey. Close the Log In pop up and use the code above.
-
 
 ## Day 1
 
