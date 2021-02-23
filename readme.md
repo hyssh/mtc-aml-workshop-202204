@@ -4,7 +4,7 @@ Let's get started Azure Machine Leaning together.
 
 ## Agenda
 
-Let us know who you are [Pool](https://app.klaxoon.com/animate/survey/). Please use following code to particiate the survey.
+Let us know who you are [Poll](https://app.klaxoon.com/animate/survey/). Please use following code to particiate the survey.
 ```text
 JRTADB9
 ```
