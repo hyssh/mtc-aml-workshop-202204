@@ -28,7 +28,7 @@ Session 2.2 | 02:00 pm - 04:00 pm |- [Azure Machine Learning using Python SDK](h
 
 Session # | Time | Topics
 ---|---|---
-Session 3.1|10:00 am - 12:00 pm|- Deep Learning using GPU</br>- Large Scale ML with Azure Remote Compute</br>- Large Scale ML with DASK
+Session 3.1|10:00 am - 12:00 pm|- Deep Learning using GPU</br>- Large Scale ML with Azure Remote Compute [Tensorflow Horovod Sample](https://github.com/hyssh/mtc-open-workshop/blob/master/Notebooks/how-to-use-azureml/ml-frameworks/tensorflow/distributed-tensorflow-with-horovod/distributed-tensorflow-with-horovod.ipynb)</br>- Large Scale ML with DASK
 Break | 12:00 pm - 01:00 pm | Lunch Break;
 Office Hour | 01:00 pm - 01:45 pm | (Optional) One-on-one Technical Architect coaching
 Session 3.2 | 02:00 pm - 04:00 pm |- AML Pipeline & MLOps</br> - Hands-on break out: 3.1 Try your own scenario / tutorial</br>- Delete resources </br>- Survey
