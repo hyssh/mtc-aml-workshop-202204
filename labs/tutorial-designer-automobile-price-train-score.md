@@ -301,12 +301,6 @@ The following statistics are shown for your model:
 
 For each of the error statistics, smaller is better. A smaller value indicates that the predictions are closer to the actual values. For the coefficient of determination, the closer its value is to one (1.0), the better the predictions.
 
-## Clean up resources
-
-Skip this section if you want to continue on with part 2 of the tutorial, [deploying models](tutorial-designer-automobile-price-deploy.md).
-
-[aml-ui-cleanup](aml-ui-cleanup.md)
-
 ## Next steps
 
 In part two, you'll learn how to deploy your model as a real-time endpoint.
