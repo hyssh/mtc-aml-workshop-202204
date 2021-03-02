@@ -130,6 +130,8 @@ After deployment finishes, you can view your real-time endpoint by going to the 
 
 1. To test your endpoint, go to the **Test** tab. From here, you can enter test data and select **Test** verify the output of your endpoint.
 
-For more information on consuming your web service, see [Consume a model deployed as a webservice](how-to-consume-web-service.md)
+For more information on consuming your web service, see [Consume a model deployed as a webservice](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-consume-web-service?tabs=python)
 
+## Go back to main
 
+> [Go back to main](readme.md)
