@@ -14,7 +14,7 @@ JRTADB9
 
 ## Day 1
 
-Session # | Time | Topics
+Session # | Time (PST) | Topics
 ---|---|---
 Session 1.1 | 10:00 am - 12:00 pm |- Welcome</br>- (Fahd) [Introduction to Azure Machine Learning Service](https://livesend.microsoft.com/i/92NKU9M0r1TqTryfB2DKSrfvb0PRgOywoyZQXLWG5vTgKPLUSSIGN___cIVnzma6qekxOtIZ9DenhH4pVTTnzxD2kVldC8f931m3BiFW9gAWktBzN1Zni5OCR3EqxDryO3CRFde6B)</br>- Hands-on break out: [Create Azure Machine Learning Workspace](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-manage-workspace?tabs=azure-portal)
 Break | 12:00 pm - 01:00 pm | Lunch Break;
