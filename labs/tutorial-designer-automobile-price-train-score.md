@@ -1,18 +1,3 @@
----
-title: 'Tutorial: Predict car prices with the designer'
-titleSuffix: Azure Machine Learning
-description: Train machine learning model to predict automobile prices using linear regression. This tutorial is part one of a two-part series.
-
-author: peterclu
-ms.author: peterlu
-services: machine-learning
-ms.service: machine-learning
-ms.subservice: core
-ms.topic: tutorial
-ms.date: 09/28/2020
-ms.custom: designer
----
-
 # Tutorial: Predict automobile price with the designer
 
 > Source of this document: [Tutorial: Predict automobile price with the designer](https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-designer-automobile-price-train-score)
@@ -32,21 +17,13 @@ In [part two](tutorial-designer-automobile-price-deploy.md) of the tutorial, you
 > [NOTE]
 >A completed version of this tutorial is available as a sample pipeline.
 >
->To find it, go to the designer in your workspace. In the **New pipeline** section, select **Sample 1 - Regression: Automobile Price Prediction(Basic)**.
-
+>To find it, go to the designer in your workspace. In the **New pipeline** section, select **Regression: Automobile Price Prediction(Basic)**.
 
 ## Create a new pipeline
 
 Azure Machine Learning pipelines organize multiple machine learning and data processing steps into a single resource. Pipelines let you organize, manage, and reuse complex machine learning workflows across projects and users.
 
-To create an Azure Machine Learning pipeline, you need an Azure Machine Learning workspace. In this section, you learn how to create both these resources.
-
-### Create a new workspace
-
-You need an Azure Machine Learning workspace to use the designer. The workspace is the top-level resource for Azure Machine Learning, it provides a centralized place to work with all the artifacts you create in Azure Machine Learning. For instruction on creating a workspace, see [Create and manage Azure Machine Learning workspaces](how-to-manage-workspace.md).
-
-> [NOTE]
-> If your workspace uses a Virtual network, there are additional configuration steps you must use to use the designer. For more information, see [Use Azure Machine Learning studio in an Azure virtual network](how-to-enable-studio-virtual-network.md)
+To create an Azure Machine Learning pipeline, you need an Azure Machine Learning workspace.
 
 ### Create the pipeline
 
