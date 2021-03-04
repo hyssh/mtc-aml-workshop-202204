@@ -34,10 +34,10 @@ Session 2.2 | 02:00 pm - 04:00 pm |- (Fahd) [Azure Machine Learning using Python
 
 Session # | Time (PST) | Topics
 ---|---|---
-Session 3.1|10:00 am - 12:00 pm|- (Fahd) Deep Learning using GPU</br>[VM Types available in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-gpu)</br>[Azure Machine Learning Service Compute targets](https://docs.microsoft.com/en-us/azure/machine-learning/concept-compute-target)</br>- (Fahd) Large Scale ML with Azure Remote Compute [Tensorflow Horovod Sample](https://github.com/hyssh/mtc-open-workshop/blob/master/Notebooks/how-to-use-azureml/ml-frameworks/tensorflow/distributed-tensorflow-with-horovod/distributed-tensorflow-with-horovod.ipynb)</br>- (Hyun) Large Scale ML with DASK
+Session 3.1|10:00 am - 12:00 pm|- (Fahd) Deep Learning using GPU</br>[VM Types available in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-gpu)</br>[Azure Machine Learning Service Compute targets](https://docs.microsoft.com/en-us/azure/machine-learning/concept-compute-target)</br>- (Fahd) Large Scale ML with Azure Remote Compute [Tensorflow Horovod Sample](https://github.com/hyssh/mtc-open-workshop/blob/master/Notebooks/how-to-use-azureml/ml-frameworks/tensorflow/distributed-tensorflow-with-horovod/distributed-tensorflow-with-horovod.ipynb)</br>- (Hyun) [Large Scale ML with DASK](https://github.com/hyssh/azureml-and-dask/blob/master/interactive/StartDask.ipynb)
 Break | 12:00 pm - 01:00 pm | Lunch Break;
 Office Hour | 01:00 pm - 01:45 pm | (Optional) One-on-one Technical Architect coaching
-Session 3.2 | 02:00 pm - 04:00 pm |- (Hyun) AML Pipeline & MLOps</br> - Hands-on break out: 3.1 Try your own scenario / tutorial</br>- Delete resources </br>- Survey
+Session 3.2 | 02:00 pm - 04:00 pm |- (Hyun) [AML Pipeline](https://github.com/Azure/MachineLearningNotebooks/blob/master/how-to-use-azureml/machine-learning-pipelines/intro-to-pipelines/aml-pipelines-getting-started.ipynb) & [MLOps](https://github.com/microsoft/MLOpsPython)</br> - Hands-on break out: 3.1 Try your own scenario / tutorial</br>- Delete resources </br>- Survey
 
 
 ## Breakout Session
