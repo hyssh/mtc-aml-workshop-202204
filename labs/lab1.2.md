@@ -2,8 +2,7 @@
 
 ## Tutorial: Create a classification model with automated ML in Azure Machine Learning
 
-Source of this tutorial: 
-
+Source of this tutorial: https://docs.microsoft.com/en-us/azure/machine-learning/tutorial-first-experiment-automated-ml
 
 In this tutorial, you learn how to create a simple classification model without writing a single line of code using automated machine learning in the Azure Machine Learning studio. This classification model predicts if a client will subscribe to a fixed term deposit with a financial institution.
 
@@ -14,12 +13,14 @@ In this tutorial, you learn how to do the following tasks:
 > * Create an Azure Machine Learning workspace.
 > * Run an automated machine learning experiment.
 > * View experiment details.
-> * Deploy the model.
-
+> * Understand the experiments results
 
 ## Get started in Azure Machine Learning studio
 
 You complete the following experiment set-up and run steps  via the Azure Machine Learning studio at https://ml.azure.com, a consolidated web interface that includes machine learning tools to perform data science scenarios for data science practitioners of all skill levels. The studio is not supported on Internet Explorer browsers.
+
+
+1. Before you start Auomated ML job, download [bankmarketing_train.csv](https://mtcseattle.blob.core.windows.net/mtcopenworkshop/bankmarketing_train.csv?sp=r&st=2021-04-01T20:50:04Z&se=2029-04-02T04:50:04Z&spr=https&sv=2020-02-10&sr=b&sig=U5lhyfJVv4kpruqDpO5mPqfacT3FeYQN%2F1kKwcv1w1U%3D) file to your local computer. The file will be used for this lab.
 
 1. Sign in to [Azure Machine Learning studio](https://ml.azure.com).
 
@@ -49,15 +50,15 @@ Before you configure your experiment, upload your data file to your workspace in
 
     1. Select **Browse**.
     
-    1. Choose the **bankmarketing_train.csv** file on your local computer. This is the file you downloaded as a [prerequisite](https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv).
+    2. Download [bankmarketing_train.csv](https://mtcseattle.blob.core.windows.net/mtcopenworkshop/bankmarketing_train.csv?sp=r&st=2021-04-01T20:50:04Z&se=2029-04-02T04:50:04Z&spr=https&sv=2020-02-10&sr=b&sig=U5lhyfJVv4kpruqDpO5mPqfacT3FeYQN%2F1kKwcv1w1U%3D) file to your local computer and use the file for training.
 
-    1. Give your dataset a unique name and provide an optional description. 
+    3. Give your dataset a unique name and provide an optional description. 
 
-    1. Select **Next** on the bottom left, to  upload it to the default container that was automatically set up during your workspace creation.  
+    4. Select **Next** on the bottom left, to  upload it to the default container that was automatically set up during your workspace creation.  
     
        When the upload is complete, the Settings and preview form is pre-populated based on the file type. 
        
-    1. Verify that the **Settings and preview** form is populated as follows and select **Next**.
+    5. Verify that the **Settings and preview** form is populated as follows and select **Next**.
         
         Field|Description| Value for tutorial
         ---|---|---
@@ -67,17 +68,17 @@ Before you configure your experiment, upload your data file to your workspace in
         Column headers| Indicates how the headers of the dataset, if any, will be treated.| All files have same headers
         Skip rows | Indicates how many, if any, rows are skipped in the dataset.| None
 
-    1. The **Schema** form allows for further configuration of your data for this experiment. For this example, select the toggle switch for the **day_of_week**, so as to not include it. Select **Next**.
+    6. The **Schema** form allows for further configuration of your data for this experiment. For this example, select the toggle switch for the **day_of_week**, so as to not include it. Select **Next**.
          ![Schema form](../images/schema-tab-config.gif)
-    1. On the **Confirm details** form, verify the information matches what was previously  populated on the **Basic info, Datastore and file selection** and **Settings and preview** forms.
+    7. On the **Confirm details** form, verify the information matches what was previously  populated on the **Basic info, Datastore and file selection** and **Settings and preview** forms.
     
-    1. Select **Create** to complete the creation of your dataset.
+    8. Select **Create** to complete the creation of your dataset.
     
-    1. Select your dataset once it appears in the list.
+    9. Select your dataset once it appears in the list.
     
-    1. Review the **Data preview**  to ensure you didn't include **day_of_week** then, select **Close**.
+    10. Review the **Data preview**  to ensure you didn't include **day_of_week** then, select **Close**.
 
-    1. Select  **Next**.
+    11. Select  **Next**.
 
 ## Configure run
 
@@ -97,16 +98,19 @@ After you load and configure your data, you can set up your experiment. This set
             ----|---|---
             Virtual&nbsp;machine&nbsp;priority |Select what priority your experiment should have| Dedicated
             Virtual&nbsp;machine&nbsp;type| Select the virtual machine type for your compute.|CPU (Central Processing Unit)
-            Virtual&nbsp;machine&nbsp;size| Select the virtual machine size for your compute. A list of recommended sizes is provided based on your data and experiment type. |Standard_DS12_V2
+            Virtual&nbsp;machine&nbsp;size| Select the virtual machine size for your compute. A list of recommended sizes is provided based on your data and experiment type. |Standard_D2_v2
         
         1. Select **Next** to populate the **Configure settings form**.
         
             Field | Description | Value for tutorial
             ----|---|---
-            Compute name |	A unique name that identifies your compute context. | automl-compute
-            Min / Max nodes| To profile data, you must specify 1 or more nodes.|Min nodes: 1<br>Max nodes: 6
+            Compute name |	A unique name that identifies your compute context. | cpu-cluster
+            Min / Max nodes| To profile data, you must specify 1 or more nodes.|Min nodes: 0<br>Max nodes: 4
             Idle seconds before scale down | Idle time before  the cluster is automatically scaled down to the minimum node count.|120 (default)
             Advanced settings | Settings to configure and authorize a virtual network for your experiment.| None               
+
+        > If you see an error, please lower the max node down to 1.
+        > ![insufficient-quota](../images/insufficient-quota.png)
 
         1. Select **Create** to create your compute target. 
 
@@ -114,15 +118,16 @@ After you load and configure your data, you can set up your experiment. This set
 
              ![Settings page](../images/compute-settings.png)
 
-        1. After creation, select your new compute target from the drop-down list.
+        2. After creation, select your new compute target from the drop-down list.
 
-    1. Select **Next**.
+    2. Select **Next**.
 
-1. On the **Task type and settings** form, complete the setup for your automated ML experiment by specifying the machine learning task type and configuration settings.
+2. On the **Task type and settings** form, complete the setup for your automated ML experiment by specifying the machine learning task type and configuration settings.
     
     1.  Select **Classification** as the machine learning task type.
 
-    1. Select **View additional configuration settings** and populate the fields as follows. These settings are to better control the training job. Otherwise, defaults are applied based on experiment selection and data.
+    2. Select **View additional configuration settings** and populate the fields as follows. These settings are to better control the training job. Otherwise, defaults are applied based on experiment selection and data. 
+        > To control training time, set the training job time at exit criterion **0.25 (hour)**.
 
         Additional&nbsp;configurations|Description|Value&nbsp;for&nbsp;tutorial
         ------|---------|---
@@ -135,7 +140,7 @@ After you load and configure your data, you can set up your experiment. This set
         
         Select **Save**.
     
-1. Select **Finish** to run the experiment. The **Run Detail**  screen opens with the **Run status** at the top as the experiment preparation begins. This status updates as the experiment progresses. Notifications also appear in the top right corner of the studio, to inform you of the status of your experiment.
+3. Select **Finish** to run the experiment. The **Run Detail**  screen opens with the **Run status** at the top as the experiment preparation begins. This status updates as the experiment progresses. Notifications also appear in the top right corner of the studio, to inform you of the status of your experiment.
 
 > Preparation takes **10-15 minutes** to prepare the experiment run.
 > Once running, it takes **2-3 minutes more for each iteration**.
@@ -175,25 +180,18 @@ To generate model explanations,
     
     ![Model explanation dashboard](../images/model-explanation-dashboard.png)
 
-## (Skip) Deploy the best model
-
-We will work on model deployment exercise from a different lab. 
-
 ## Discussion
 
 In this automated machine learning tutorial, you used Azure Machine Learning's automated ML interface to create and deploy a classification model. See these articles for more information and next steps:
 
-+ Learn more about [automated machine learning](concept-automated-ml.md).
-+ For more information on classification metrics and charts, see the [Understand automated machine learning results](how-to-understand-automated-ml.md) article.
-+ Learn more about [featurization](how-to-configure-auto-features.md#featurization).
-+ Learn more about [data profiling](how-to-connect-data-ui.md#profile).
-
-## Go to Main
-
-[Go to main](https://github.com/hyssh/mtc-open-workshop)
+* For more information on classification metrics and charts, see the [Understand automated machine learning results](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-understand-automated-ml) article.
+* nLearn more about [featurization](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-auto-features).
 
 
-> This Bank Marketing dataset is made available under the [Creative Commons (CCO: Public Domain) License](https://creativecommons.org/publicdomain/zero/1.0/). Any rights in individual contents of the database are licensed under the [Database Contents License](https://creativecommons.org/publicdomain/zero/1.0/) and available on [Kaggle](https://www.kaggle.com/janiobachmann/bank-marketing-dataset). This dataset was originally available within the [UCI Machine Learning Database](https://archive.ics.uci.edu/ml/datasets/bank+marketing).
->
+> The **Bank Marketing** dataset is made available under the [Creative Commons (CCO: Public Domain) License](https://creativecommons.org/publicdomain/zero/1.0/). Any rights in individual contents of the database are licensed under the [Database Contents License](https://creativecommons.org/publicdomain/zero/1.0/) and available on [Kaggle](https://www.kaggle.com/janiobachmann/bank-marketing-dataset). This dataset was originally available within the [UCI Machine Learning Database](https://archive.ics.uci.edu/ml/datasets/bank+marketing).
 >
 > [Moro et al., 2014] S. Moro, P. Cortez and P. Rita. A Data-Driven Approach to Predict the Success of Bank Telemarketing. Decision Support Systems, Elsevier, 62:22-31, June 2014.
+
+---
+
+[Go back to main page](https://github.com/hyssh/mtc-open-workshop)

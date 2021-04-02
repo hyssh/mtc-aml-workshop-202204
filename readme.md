@@ -16,16 +16,16 @@ Session # | Time (PDT) | Topics
 Session 1.1 | 10:00 am - 12:00 pm |- Welcome</br>- Session: Introduction to Azure Machine Learning Service
 Break | 12:00 pm - 01:00 pm | Lunch Break;
 Office Hour | 01:00 pm - 01:45 pm | (Optional) One-on-one Technical Architect coaching (Join the same teams meeting invite)
-Session 1.2 | 02:00 pm - 04:00 pm |- Session: Automated Machine Learning Concept</br> - Hands-on break out 1.2: [Create AutoML experiment](/labs/lab1.2.md)</br>- Downsize/Delete resources</br>- Survey
+Session 1.2 | 02:00 pm - 04:00 pm |- Session: Automated Machine Learning Concept</br> - Hands-on break out 1.2: [Create AutoML experiment](/labs/lab1.2.md)</br>- Downsize/Stop resources
 
 ## Day 2
 
 Session # | Time (PDT) | Topics
 ---|---|---
-Session 2.1|10:00 am - 12:00 pm|- Session: No-code ML using [AML Studio Designer](https://docs.microsoft.com/en-us/azure/machine-learning/concept-designer)</br>- Hands-on break out 2.1: [Tutorial for AML Studio Designer](/labs/lab2.1.md)</br>
+Session 2.1|10:00 am - 12:00 pm|- Session: No-code ML using [AML Studio Designer](labs/session2.1.md)</br>- Hands-on break out 2.1: [Tutorial for AML Studio Designer](/labs/lab2.1.md)</br>
 Break | 12:00 pm - 01:00 pm | Lunch Break;
 Office Hour | 01:00 pm - 01:45 pm | (Optional) One-on-one Technical Architect coaching (Join the same teams meeting invite)
-Session 2.2 | 02:00 pm - 04:00 pm |- Session: [Azure Machine Learning using Python SDK](/labs/session2.2.md)</br> - Hands-on break out 2.2: [Create Compute Instance](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-attach-compute-studio#portal-create) </br>- Hands-on break out 2.3: [AML Python get started](https://github.com/hyssh/mtc-open-workshop/tree/master/Notebooks/tutorials/create-first-ml-experiment)</br>- Downsize/Delete resources </br>- Survey
+Session 2.2 | 02:00 pm - 04:00 pm |- Session: [Azure Machine Learning using Python SDK](/labs/session2.2.md)</br> - Hands-on break out 2.2: [Create Compute Instance](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-create-attach-compute-studio#portal-create) </br> - Demo: Inside CI (Compute Instance)</br>- Hands-on break out 2.3: [AML Python get started](https://github.com/hyssh/mtc-open-workshop/tree/master/Notebooks/tutorials/create-first-ml-experiment) </br> ```Notebooks/tutorials/create-first-ml-experiment/tutorial-1st-experiment-sdk-train.ipynb```</br>- Downsize/Stop resources
 
 ## Day 3
 
