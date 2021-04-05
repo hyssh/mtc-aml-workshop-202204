@@ -70,7 +70,6 @@ For following exsercises, clone this git repo to your CI (Compute Instance).
 git clone https://github.com/hyssh/mtc-open-workshop.git
 ```
 
-
 ---
 
 [Go back to main page](https://github.com/hyssh/mtc-open-workshop)

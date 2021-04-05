@@ -4,7 +4,6 @@ Original document is located in https://docs.microsoft.com/en-us/azure/machine-l
 
 In this article, you learn how a machine learning pipeline helps you build, optimize, and manage your machine learning workflow. 
 
-<a name="compare"></a>
 ## Which Azure pipeline technology should I use?
 
 The Azure cloud provides several types of pipeline, each with a different purpose. The following table lists the different pipelines and what they are used for:
@@ -58,7 +57,7 @@ When you create and run a `Pipeline` object, the following high-level steps occu
     + When the step completes, its outputs are prepared as inputs to the next step and/or written to storage
     + Resources that are no longer needed are finalized and detached
 
-![Pipeline steps](./media/concept-ml-pipelines/run_an_experiment_as_a_pipeline.png)
+![Pipeline steps](../images/run_an_experiment_as_a_pipeline.png)
 
 ## Building pipelines with the Python SDK
 
@@ -122,7 +121,7 @@ Developers who prefer a visual design surface can use the Azure Machine Learning
 
 When you visually design pipelines, the inputs and outputs of a step are displayed visibly. You can drag and drop data connections, allowing you to quickly understand and modify the dataflow of your pipeline.
 
-![Azure Machine Learning designer example](./media/concept-designer/designer-drag-and-drop.gif)
+![Azure Machine Learning designer example](../images/designer-drag-and-drop.gif)
 
 ## Key advantages
 
