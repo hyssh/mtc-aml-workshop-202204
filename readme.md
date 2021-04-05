@@ -47,7 +47,7 @@ Session # | Time (PDT) | Topics
 Session 3.1|10:00 am - 12:00 pm|- Session: Deep Learning using GPU</br>[VM Types available in Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-gpu)</br>[Azure Machine Learning Service Compute targets](https://docs.microsoft.com/en-us/azure/machine-learning/concept-compute-target)</br>- Session: Large Scale ML with Azure Remote Compute [Tensorflow Horovod Sample](https://github.com/hyssh/mtc-open-workshop/blob/master/Notebooks/how-to-use-azureml/ml-frameworks/tensorflow/distributed-tensorflow-with-horovod/distributed-tensorflow-with-horovod.ipynb)</br>- Session: [Large Scale ML with DASK](https://github.com/hyssh/azureml-and-dask/blob/master/interactive/StartDask.ipynb)
 Break | 12:00 pm - 01:00 pm | Lunch Break;
 Office Hour | 01:00 pm - 01:45 pm | (Optional) One-on-one Technical Architect coaching
-Session 3.2 | 02:00 pm - 04:00 pm |- Session: [AML Pipeline]() & [MLOps](https://github.com/microsoft/MLOpsPython)</br> - Hands-on break out: 3.1: [AML Pipeline](Notebooks/how-to-use-azureml/machine-learning-pipelines/intro-to-pipelines/aml-pipelines-getting-started.ipynb)</br>```Notebooks/how-to-use-azureml/machine-learning-pipelines/intro-to-pipelines/aml-pipelines-getting-started.ipynb```</br>- Delete resources </br>- Survey
+Session 3.2 | 02:00 pm - 04:00 pm |- Session: [AML Pipeline](labs/session3.2.md) & [MLOps](https://github.com/microsoft/MLOpsPython)</br> - Hands-on break out: 3.1: [AML Pipeline](Notebooks/how-to-use-azureml/machine-learning-pipelines/intro-to-pipelines/aml-pipelines-getting-started.ipynb)</br>```Notebooks/how-to-use-azureml/machine-learning-pipelines/intro-to-pipelines/aml-pipelines-getting-started.ipynb```</br>- Delete resources </br>- Survey
 
 
 ## Breakout Session
