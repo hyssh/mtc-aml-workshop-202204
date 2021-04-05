@@ -14,7 +14,6 @@ In part one of the tutorial, you'll learn how to:
 
 In [part two](tutorial-designer-automobile-price-deploy.md) of the tutorial, you'll deploy your model as a real-time inferencing endpoint to predict the price of any car based on technical specifications you send it. 
 
-> [NOTE]
 >A completed version of this tutorial is available as a sample pipeline.
 >
 >To find it, go to the designer in your workspace. In the **New pipeline** section, select **Regression: Automobile Price Prediction(Basic)**.
@@ -49,14 +48,12 @@ You can set a **Default compute target** for the entire pipeline, which will tel
 
     If you already have an available compute target, you can select it to run this pipeline.
 
-    > [NOTE]
     > The designer can only run training experiments on Azure Machine Learning Compute but other compute targets won't be shown.
 
 1. Enter a name for the compute resource.
 
 1. Select **Save**.
 
-    > [NOTE]
     > It takes approximately five minutes to create a compute resource. After the resource is created, you can reuse it and skip this wait time for future runs.
     >
     > The compute resource autoscales to zero nodes when it's idle to save cost. When you use it again after a delay, you might experience approximately five minutes of wait time while it scales back up.
@@ -95,7 +92,7 @@ When you train a model, you have to do something about the data that's missing. 
 
 1. Connect the **Automobile price data (Raw)** dataset to the **Select Columns in Dataset** module. Drag from the dataset's output port, which is the small circle at the bottom of the dataset on the canvas, to the input port of **Select Columns in Dataset**, which is the small circle at the top of the module.
 
-    > [TIP]
+    
     > You create a flow of data through your pipeline when you connect the output port of one module to an input port of another.
     >
 
@@ -127,7 +124,6 @@ When you train a model, you have to do something about the data that's missing. 
 
 Your dataset still has missing values after you remove the **normalized-losses** column. You can remove the remaining missing data by using the **Clean Missing Data** module.
 
-> [TIP]
 > Cleaning the missing values from input data is a prerequisite for using most of the modules in the designer.
 
 1. In the module palette to the left of the canvas, expand the section **Data Transformation**, and find the **Clean Missing Data** module.
@@ -166,7 +162,7 @@ Splitting data is a common task in machine learning. You will split your data in
 
 1. Connect the left port of the **Clean Missing Data** module to the **Split Data** module.
 
-    > [IMPORTANT]
+    
     > Be sure that the left output ports of **Clean Missing Data** connects to **Split Data**. The left port contains the the cleaned data. The right port contains the discarted data.
 
 1. Select the **Split Data** module.
@@ -182,7 +178,6 @@ Splitting data is a common task in machine learning. You will split your data in
 Train the model by giving it a dataset that includes the price. The algorithm constructs a model that explains the relationship between the features and the price as presented by the training data.
 
 1. In the module palette, expand **Machine Learning Algorithms**.
-    
     This option displays several categories of modules that you can use to initialize learning algorithms.
 
 1. Select **Regression** > **Linear Regression**, and drag it to the pipeline canvas.
@@ -192,8 +187,6 @@ Train the model by giving it a dataset that includes the price. The algorithm co
 1. Connect the output of the **Linear Regression** module to the left input of the **Train Model** module.
 
 1. Connect the training data output (left port) of the **Split Data** module to the right input of the **Train Model** module.
-    
-    > [IMPORTANT]
     > Be sure that the left output ports of **Split Data** connects to **Train Model**. The left port contains the the training set. The right port contains the test set.
 
     ![pipeline-train-model](../images/pipeline-train-model.png)
@@ -205,8 +198,6 @@ Train the model by giving it a dataset that includes the price. The algorithm co
 1. In the **Label column** dialog box, expand the drop-down menu and select **Column names**. 
 
 1. In the text box, enter *price* to specify the value that your model is going to predict.
-
-    >[IMPORTANT]
     > Make sure you enter the column name exactly. Do not capitalize **price**. 
 
     Your pipeline should look like this:
@@ -241,15 +232,14 @@ Now that your pipeline is all setup, you can submit a pipeline run to train your
 
 1. In the **Set up pipeline run** dialog box, select **Create new**.
 
-    > [NOTE]
     > Experiments group similar pipeline runs together. If you run a pipeline multiple times, you can select the same experiment for successive runs.
 
     1. For **New experiment Name**, enter **Tutorial-CarPrices**.
 
     1. Select **Submit**.
-    
+
     You can view run status and details at the top right of the canvas.
-    
+
     If this is the first run, it may take up to 20 minutes for your pipeline to finish running. The default compute settings have a minimum node size of 0, which means that the designer must allocate resources after being idle. Repeated pipeline runs will take less time since the compute resources are already allocated. Additionally, the designer uses cached results for each module to further improve efficiency.
 
 ### View scored labels
