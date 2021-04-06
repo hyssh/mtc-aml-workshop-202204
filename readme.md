@@ -14,7 +14,7 @@ Prerequisites
 
 Session # | Time (PDT) | Topics
 ---|---|---
-Session 1.1 | 10:00 am - 12:00 pm |- Welcome</br>- Session: Introduction to Azure Machine Learning Service
+Session 1.1 | 10:00 am - 12:00 pm |- Welcome</br>- Session: Introduction to Azure Machine Learning Service</br>- Demo: Azure Machine Learning Workspace</br> --> Data Store</br> --> Dataset</br> --> Environment
 Break | 12:00 pm - 01:00 pm | Lunch Break;
 Office Hour | 01:00 pm - 01:45 pm | (Optional) One-on-one Technical Architect coaching (Join the same teams meeting invite)
 Session 1.2 | 02:00 pm - 04:00 pm |- Session: Automated Machine Learning Concept</br> - Hands-on break out 1.2: [Create AutoML experiment](/labs/lab1.2.md)</br>- Downsize/Stop resources
@@ -26,7 +26,7 @@ Session # | Time (PDT) | Topics
 Session 2.1|10:00 am - 12:00 pm|- Session: No-code ML using [AML Studio Designer](labs/session2.1.md)</br>- Hands-on break out 2.1: [Tutorial for AML Studio Designer](/labs/lab2.1.md)</br>
 Break | 12:00 pm - 01:00 pm | Lunch Break;
 Office Hour | 01:00 pm - 01:45 pm | (Optional) One-on-one Technical Architect coaching (Join the same teams meeting invite)
-Session 2.2 | 02:00 pm - 04:00 pm |- Session: [Azure Machine Learning using Python SDK](/labs/session2.2.md)</br> - Hands-on break out 2.2: [Create Compute Instance](labs/lab2.2.md) </br> - Demo: Inside CI (Compute Instance)</br>- Hands-on break out 2.3: [AML Python get started](https://github.com/hyssh/mtc-open-workshop/tree/master/Notebooks/tutorials/1.create-first-ml-experiment) </br>```Notebooks/tutorials/1.create-first-ml-experiment/tutorial-1st-experiment-sdk-train.ipynb```</br>- Downsize/Stop resources
+Session 2.2 | 02:00 pm - 04:00 pm |- Session: [Azure Machine Learning using Python SDK](/labs/session2.2.md)</br> - Hands-on break out 2.2: [Create Compute Instance](labs/lab2.2.md) </br> - Demo: Inside CI (Compute Instance)</br> --> Python </br> --> Conda env </br> --> Docker</br>- Hands-on break out 2.3: [AML Python get started](https://github.com/hyssh/mtc-open-workshop/tree/master/Notebooks/tutorials/1.create-first-ml-experiment) </br>```Notebooks/tutorials/1.create-first-ml-experiment/tutorial-1st-experiment-sdk-train.ipynb```</br>- Downsize/Stop resources
 
 > **Extra labs for Day 2**
 >

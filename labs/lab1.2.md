@@ -50,15 +50,13 @@ Before you configure your experiment, upload your data file to your workspace in
 
     1. Select **Browse**.
     
-    2. Download [bankmarketing_train.csv](https://mtcseattle.blob.core.windows.net/mtcopenworkshop/bankmarketing_train.csv?sp=r&st=2021-04-01T20:50:04Z&se=2029-04-02T04:50:04Z&spr=https&sv=2020-02-10&sr=b&sig=U5lhyfJVv4kpruqDpO5mPqfacT3FeYQN%2F1kKwcv1w1U%3D) file to your local computer and use the file for training.
+    1. Locate the file, '**bankmarketing_train.csv**' you download in local computer and use the file for training.
 
-    3. Give your dataset a unique name and provide an optional description. 
-
-    4. Select **Next** on the bottom left, to  upload it to the default container that was automatically set up during your workspace creation.  
+    1. Select **Next** on the bottom left, to  upload it to the default container that was automatically set up during your workspace creation.  
     
        When the upload is complete, the Settings and preview form is pre-populated based on the file type. 
        
-    5. Verify that the **Settings and preview** form is populated as follows and select **Next**.
+    1. Verify that the **Settings and preview** form is populated as follows and select **Next**.
         
         Field|Description| Value for tutorial
         ---|---|---
@@ -68,17 +66,17 @@ Before you configure your experiment, upload your data file to your workspace in
         Column headers| Indicates how the headers of the dataset, if any, will be treated.| All files have same headers
         Skip rows | Indicates how many, if any, rows are skipped in the dataset.| None
 
-    6. The **Schema** form allows for further configuration of your data for this experiment. For this example, select the toggle switch for the **day_of_week**, so as to not include it. Select **Next**.
+    1. The **Schema** form allows for further configuration of your data for this experiment. For this example, select the toggle switch for the **day_of_week**, so as to not include it. Select **Next**.
          ![Schema form](../images/schema-tab-config.gif)
-    7. On the **Confirm details** form, verify the information matches what was previously  populated on the **Basic info, Datastore and file selection** and **Settings and preview** forms.
+    1. On the **Confirm details** form, verify the information matches what was previously  populated on the **Basic info, Datastore and file selection** and **Settings and preview** forms. Leave 'Profile this dataset after creation' unchecked.
     
-    8. Select **Create** to complete the creation of your dataset.
+    1. Select **Create** to complete the creation of your dataset.
     
-    9. Select your dataset once it appears in the list.
+    1. Select your dataset once it appears in the list.
     
-    10. Review the **Data preview**  to ensure you didn't include **day_of_week** then, select **Close**.
+    1. Review the **Data preview**  to ensure you didn't include **day_of_week** then, select **Close**.
 
-    11. Select  **Next**.
+    1. Select  **Next**.
 
 ## Configure run
 
@@ -136,7 +134,7 @@ After you load and configure your data, you can set up your experiment. This set
         Blocked algorithms | Algorithms you want to exclude from the training job| None
         Exit criterion| If a criteria is met, the training job is stopped. |Training&nbsp;job&nbsp;time (hours): 0.25 <br> Metric&nbsp;score&nbsp;threshold: None
         Validation | Choose a cross-validation type and number of tests.|Validation type:<br>&nbsp;k-fold&nbsp;cross-validation <br> <br> Number of validations: 2
-        Concurrency| The maximum number of parallel iterations executed per iteration| Max&nbsp;concurrent&nbsp;iterations: 5
+        Concurrency| The maximum number of parallel iterations executed per iteration| Max&nbsp;concurrent&nbsp;iterations: 4
         
         Select **Save**.
     
@@ -185,7 +183,7 @@ To generate model explanations,
 In this automated machine learning tutorial, you used Azure Machine Learning's automated ML interface to create and deploy a classification model. See these articles for more information and next steps:
 
 * For more information on classification metrics and charts, see the [Understand automated machine learning results](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-understand-automated-ml) article.
-* nLearn more about [featurization](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-auto-features).
+* Learn more about [featurization](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-configure-auto-features).
 
 
 > The **Bank Marketing** dataset is made available under the [Creative Commons (CCO: Public Domain) License](https://creativecommons.org/publicdomain/zero/1.0/). Any rights in individual contents of the database are licensed under the [Database Contents License](https://creativecommons.org/publicdomain/zero/1.0/) and available on [Kaggle](https://www.kaggle.com/janiobachmann/bank-marketing-dataset). This dataset was originally available within the [UCI Machine Learning Database](https://archive.ics.uci.edu/ml/datasets/bank+marketing).
