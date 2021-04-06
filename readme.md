@@ -33,6 +33,7 @@ Session 2.2 | 02:00 pm - 04:00 pm |- Session: [Azure Machine Learning using Pyth
 > Dataset hands-on lab notebook '**AML-Dataset.ipynb**' and '**train-with-datasets.ipynb**'
 >
 > ```Notebooks/tutorials/2.train-with-datasets/AML-Dataset.ipynb```
+>
 > ```Notebooks/tutorials/2.train-with-datasets/train-with-datasets.ipynb```
 >
 ></br>
