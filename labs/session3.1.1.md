@@ -39,20 +39,6 @@ You can use any of the following resources for a training compute target for mos
 
 The following compute resources can be used to host your model deployment.
 
----
-title: "include file"
-description: "include file"
-services: machine-learning
-author: sdgilley
-ms.service: machine-learning
-ms.author: sgilley
-manager: cgronlund
-ms.custom: "include file"
-ms.topic: "include"
-ms.date: 12/11/2020
----
-
-
 The compute target you use to host your model will affect the cost and availability of your deployed endpoint. Use this table to choose an appropriate compute target.
 
 | Compute target | Used for | GPU support | FPGA support | Description |
